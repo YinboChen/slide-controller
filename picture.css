@@ -1,0 +1,176 @@
+body {
+  display: flex;
+}
+
+#tab_bar {
+	position: sticky;
+}
+
+@media (orientation: landscape) {
+  #tab_bar {
+    flex-direction: row;
+    background: blue;
+    top: 0px;
+    width: 102px;
+  }
+}
+
+@media (orientation: portrait) {
+  #tab_bar {
+    flex-direction: column;
+    background: red;
+    bottom: 0px;
+    position:fixed;
+    overflow: auto;
+  }
+}
+
+
+/* Tab */
+.popup{
+	width: 90px;
+	margin: 10px;
+}
+
+#tab{
+	margin:0px auto;
+}
+
+
+/*view 1*/
+#imageView1{   	/*container */
+	background-color: lightblue;
+}
+
+#left_button, #right_button{
+	float: left;
+	margin-top: 100px;
+	padding: 20px;
+	text-align: center;
+}
+
+
+@media (max-width: 823px){
+	#left_button, #right_button{
+	float: none; !important
+	}
+}
+
+
+#image_and_desc{
+	float: left;
+	padding: 20px;
+	background-color: yellow;
+}
+
+
+#pic_card{
+	background-color: lightblue;
+}
+
+#image_div{
+	max-width: 400px;
+	background-color: pink;
+	margin: auto; // to the center
+}
+
+
+#image1{
+	max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+
+
+
+/* view 2 */
+
+
+#imageView2{
+	width: 1200px;
+}
+
+#imageShow2{
+	max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: pink;
+	padding: 20px;
+}
+#div_container{
+	max-width: 100%;
+    height: auto;
+}
+
+
+
+#tip-content{
+	opacity: 0.5;
+	width: 200px;
+	height: 200px;
+	float:left;
+	background-color: green;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+/*picture card*/
+/*view 3*/
+#big_div{
+	background-color: lightblue;
+	border: 1px solid black;
+	width: 700px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+#small_div{
+	float:right;
+	border: 1px solid black;
+	width: 490px;
+}
+#small_div2{
+    float: right;
+    border: 1px solid black;
+    width: 490px;
+}
+
+label{
+	font-weight: bold;
+}
+
+
+#pic{
+	float: left;
+	display: block;
+	height: 200px;
+	width: 200px;
+}
+#desc{
+	/*color: green;*/
+}
+#comments{
+	/*color: yellow;*/
+
+}
+#button{
+
+}
+#list{
+	list-style: none;
+}
+
+/*opacity: 0.5  # transparent */
+
+
+/*rules for all*/
+button{
+	font-size: 15px;
+}
+
